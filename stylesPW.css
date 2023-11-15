@@ -1,0 +1,464 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat', cursive;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*#container{
+    padding: 0.5em;
+    font-family: LucidaConsole, cursive;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+header a i{
+    color: white;
+    font-size: 1.5em;
+    padding: 0.1em;
+}
+
+header{
+    /*background-color: rgba(34, 33, 31, 0.85);*/
+    display: flex;
+    /*background-color: rgb(20, 12, 60);*/
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+header nav ul{
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+
+#seccion-principal{
+    padding: auto;
+    /*margin: 50px;*/
+    /*border: 5px solid black;*/
+    font-family: LucidaConsole, cursive;
+    font-size: 30px;
+}
+h2{
+    color: white;
+}
+
+h3{
+    padding: 10px;
+    /*margin: 30px;
+    border: 5px solid blue;*/  
+    font-family: LucidaConsole, cursive;
+    font-size: 50px;
+    color: white;
+}
+
+.seccion-3 h4 a{
+    color: white;
+}
+
+p{
+    color : white; 
+    /*background-color: black;*/
+    font-family: LucidaConsole;
+    font-size: 20px;
+    /*margin: 20px;*/
+}
+
+.acerca-imagen img {
+    width: 12em; 
+    height: 12em;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.trabajo-1-imagen img {
+    width: 12em; 
+    height: 12em;
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+}
+
+.checkbtn{
+    display: block;
+}
+
+/*#encabezado{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: cyan;
+    top: 20px;
+    left: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}*/
+.seccion-1{
+    background-image: url(img/onda-acustica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccion-1{
+    /*background-color: rgb(204, 209, 209 );/*#eeeeee;*/
+    /*background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);*/
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3em;
+}
+
+.seccion-2 img{
+    width: 100%;
+    height: 200px;
+}
+
+.seccion-3{
+    /*background-color: rgb(225, 228, 229);*/
+    background-image: url("img/circuit-board.jpg");
+    /*font-size: 20px;*/
+    text-align: justify;
+    padding: 3em;
+}
+.seccion-3 h2{
+    /*background-color: aqua;*/
+    color: white;
+    text-align: center;
+}
+.Trabajos h3{
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.trabajo {
+    color: white;
+    font-size: 19px;
+    width: 100%;
+    padding: 10px;
+    margin: 0, 20px;
+    text-align: justify;
+}
+
+.Trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    padding: 45px 50px;
+    margin: 0, 30px;
+    width: 100%;
+}
+
+.Trabajos img{
+    border-radius: 30px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.text {
+    color: white;   
+}
+
+/*MENU*/
+
+#check{
+    display: none;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+footer { 
+    background-image: url("img/cto22.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*width: 100%;
+    height: auto;*/
+}
+
+footer nav ul{
+    /*background-color: rgba(20, 12, 60);*/
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    font-size: 2em;
+}
+
+footer nav ul li a{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+footer h3{
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    /*background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);*/
+    margin: auto;
+}
+
+footer a i.fa-brands.fa-whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 39px;
+    font-size: 45px;
+    color: #25d366; /* Usar el color de WhatsApp */
+}
+
+/* media queries*/
+
+/*@media (max-width: 767px){
+    .Trabajos{
+        font-size: 20px;
+        color: blue;
+    }
+}*/
+
+@media (max-width: 768px){
+    
+    .container{
+        font-size: 10px;
+        color: grey;
+        justify-content: center;
+        background-color: aqua;
+    }
+    .Trabajos{
+        font-size: 40px;
+        /*color: aquamarine;*/
+    }
+    .trabajo{
+        width: 45%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .container{
+        font-size: 15px;
+        color: cornflowerblue;
+    }
+    .Trabajos{
+        font-size: 30px;
+        color: grey;
+    }
+    .trabajo{
+        width: 30%;
+    }
+}
+
+.checkbtn{
+    display: block;
+}
+
+#encabezado ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(5, 5, 96);
+    text-align: center;
+
+    top: 80px;
+    left: 100%;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+#check:checked ~ ul{
+    left: 0;
+    display: block;
+}
+
+#encabezado nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+#encbezado nav ul li a{
+    font-size: 30px;
+}
+
+#check:checked ~ .checkbtn{
+    color: gray;
+}
+
+/* Seccion formulario contacto*/
+/* ------------- Encabezado Contacto ------------- */
+  
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    /*background-color: #f6f7f8;*/
+    background-color: #eaeaeb;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+  .form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+    color: black;
+  }
+  
+  .form-row input[type="text"], 
+  .form-row input[type="email"]  {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  #alertas{
+    color: black;
+
+  }
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+  }
+  
+  .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+  }
+  
+  .form-row input[type="text"] {
+      /*width: 250px;*/
+      height: initial;
+  }
+  .form-row label {
+      /*text-align: right;*/
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+  }
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+    width: 100%;
+}
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+.form-row textarea {
+      width: 250px;
+}
+
+.form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+}
+      
+      
+.form-row button:hover {
+        background-color: #76aeed;
+}
+      
+      
+.form-row button:active {
+        background-color: #407fc7;
+}
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+.form-row button {
+          margin-left: 120px;
+          /*width: 100%;*/
+}
